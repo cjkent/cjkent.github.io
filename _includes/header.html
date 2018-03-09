@@ -1,0 +1,15 @@
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="https://github.com/cjkent/osiris/wiki/Getting-Started">Documentation</a></li>
+            <li><a href="https://github.com/cjkent/osiris">Code</a></li>
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
