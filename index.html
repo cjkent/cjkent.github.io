@@ -5,33 +5,27 @@ layout: landing-page
 <!-- One -->
 <section id="one" class="wrapper style1">
     <header class="major">
-        <h2>Ipsum feugiat consequat</h2>
-        <p>Tempus adipiscing commodo ut aliquam blandit</p>
+        <h2>Simple Serverless Web Applications</h2>
     </header>
     <div class="container">
         <div class="row">
-            <div class="6u">
+            <div class="5u">
                 <section>
-                    <i class="icon fa-refresh major"></i>
-                    <h3>Blandit quis curae</h3>
-                    <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc
-                        tincidunt lobortis.</p>
+                    <p>Osiris is a library for building and deploying serverless web applications on Amazon Web
+                        Services, with a focus on simplicity and ease of use.</p>
+                    <p>AWS Lambda and API Gateway provide a great platform for hosting web applications but have a steep
+                        learning curve. Osiris</p>
+                    <p>The simplest application you can build with Osiris looks something like this:</p>
                 </section>
             </div>
 
-            <div class="6u">
-<pre>
-            {% highlight kotlin %}
-            {% raw %}
+            <div class="7u">
+                {% highlight kotlin %}{% raw %}
 val api = api<ComponentsProvider> {
-
     get("/helloworld") { req ->
         "hello, world!"
     }
-}
-            {% endraw %}
-            {% endhighlight %}
-        </pre>
+}{% endraw %}{% endhighlight %}
             </div>
         </div>
     </div>
@@ -39,26 +33,28 @@ val api = api<ComponentsProvider> {
         <div class="row">
             <div class="4u">
                 <section class="special box">
-                    <i class="icon fa-area-chart major"></i>
-                    <h3>Justo placerat</h3>
-                    <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc
-                        tincidunt lobortis.</p>
+                    <h3>A Familiar Model</h3>
+                    <p>Osiris provides a familiar DSL for defining HTTP endpoints, inspired by libraries like Sinatra
+                        and SparkJava.</p>
+                    <p>Osiris runs on the JVM and uses Kotlin.</p>
                 </section>
             </div>
             <div class="4u">
                 <section class="special box">
-                    <i class="icon fa-refresh major"></i>
-                    <h3>Blandit quis curae</h3>
-                    <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc
-                        tincidunt lobortis.</p>
+                    <h3>Tooling</h3>
+                    <p>Osiris provides plugins for Maven and Gradle that:
+                    <ul>
+                        <li>Create the initial project</li>
+                        <li>Build the project</li>
+                        <li>Generate the AWS configuration</li>
+                        <li>Deploy the application to AWS</li>
+                    </ul>
                 </section>
             </div>
             <div class="4u">
                 <section class="special box">
-                    <i class="icon fa-cog major"></i>
-                    <h3>Amet sed accumsan</h3>
-                    <p>Eu non col commodo accumsan ante mi. Commodo consectetur sed mi adipiscing accumsan ac nunc
-                        tincidunt lobortis.</p>
+                    <h3>Local Server</h3>
+                    <p>Applications written with Osiris can be run locally for development and debugging.</p>
                 </section>
             </div>
         </div>
