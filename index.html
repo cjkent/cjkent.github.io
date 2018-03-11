@@ -13,8 +13,10 @@ layout: landing-page
                 <section>
                     <p>Osiris is a library for building and deploying serverless web applications on Amazon Web
                         Services, with a focus on simplicity and ease of use.</p>
-                    <p>An application built with Osiris is deployed to AWS as a Lambda function and an API Gateway API. CloudFormation configuration is generated to define the application resources.</p>
-                    <p>Osiris runs on the JVM and provides a DSL written in Kotlin. It is open source and is released under the Apache 2.0 license.</p>
+                    <p>An application built with Osiris is deployed to AWS as a Lambda function and an API Gateway API.
+                        CloudFormation configuration is generated to define the application resources.</p>
+                    <p>Osiris runs on the JVM and provides a DSL written in Kotlin. It is open source and is released
+                        under the Apache 2.0 license.</p>
                     <p>The simplest application you can build with Osiris looks something like this:</p>
                 </section>
             </div>
@@ -56,22 +58,35 @@ val api = api<ComponentsProvider> {
             <div class="4u">
                 <section class="special box">
                     <h3>Local Server</h3>
-                    <p>Osiris includes a local server so applications can be developed and debugged without being deployed to AWS.</p>
+                    <p>Osiris includes a local server so applications can be developed and debugged without being
+                        deployed to AWS.</p>
                 </section>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="12u">
-                <p>AWS Lambda and API Gateway are an excellent platform for hosting web applications. They allow applications to effortlessly to handle high load without needing to plan or to provision server capacity in advance. They also scale down to zero when not required, making it viable to build applications whose cost couldn't be justified running on a dedicated server.</p>
-                <p>Unfortunately they also have a steep learning curve. API Gateway in particular requires a deep understanding and a great deal of configuration to achieve something that would normally be possible in a few lines of code.</p>
-                <p>Osiris aims to make building and deploying a serverless web application as easy as building an application that runs in a traditional server.</p>
-                <p>The DSL allows a REST API to be defined in a simple, familiar way, and the Maven and Gradle plugins generate all the configuration needed to define the application resources in AWS. The plugin also builds the application artfiacts, uploads them to AWS and deploys the application in a single operation.</p>
-                <p>Osiris allows you to go from an empty directory to a deployed application in two Maven commands.</p>
+    <section id="two" class="wrapper style2">
+        <div class="container">
+            <div class="row">
+                <div class="8u">
+                    <p>AWS Lambda and API Gateway are an excellent platform for hosting web applications. They allow
+                        applications to effortlessly to handle high load without needing to plan or to provision server
+                        capacity in advance. They also scale down to zero when not required, making it viable to build
+                        applications whose cost couldn't be justified running on a dedicated server.</p>
+                    <p>Unfortunately they also have a steep learning curve. API Gateway in particular requires a deep
+                        understanding and a great deal of configuration to achieve something that would normally be
+                        possible in a few lines of code.</p>
+                    <p>Osiris aims to make building and deploying a serverless web application as easy as building an
+                        application that runs in a traditional server.</p>
+                    <p>The DSL allows a REST API to be defined in a simple, familiar way, and the Maven and Gradle
+                        plugins generate all the configuration needed to define the application resources in AWS. The
+                        plugin also builds the application artfiacts, uploads them to AWS and deploys the application in
+                        a single operation.</p>
+                    <p>Osiris allows you to go from an empty directory to a deployed application in two Maven
+                        commands.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </section>
 
 <!-- Two -->
