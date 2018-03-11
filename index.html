@@ -17,11 +17,11 @@ layout: landing-page
                         CloudFormation configuration is generated to define the application resources.</p>
                     <p>Osiris runs on the JVM and provides a DSL written in Kotlin. It is open source and is released
                         under the Apache 2.0 license.</p>
-                    <p>The simplest application you can build with Osiris looks something like this:</p>
                 </section>
             </div>
 
             <div class="6u">
+                <p>The simplest application you can build with Osiris looks something like this:</p>
                 {% highlight kotlin %}{% raw %}
 val api = api<ComponentsProvider> {
     get("/helloworld") { req ->
