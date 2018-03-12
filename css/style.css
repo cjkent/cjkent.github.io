@@ -854,7 +854,12 @@ input[type="button"]:disabled,
 }
 
 .wrapper.style2 {
-  background: #232c43;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
   color: #c5c7c8;
 }
 
